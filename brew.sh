@@ -40,7 +40,3 @@ brew cleanup
 
 brew install zsh 
 brew install zsh-completions
-
-brew install homebrew/php/composer 
-brew install homebrew/php/phpunit
-brew install homebrew/php/php56-mcrypt

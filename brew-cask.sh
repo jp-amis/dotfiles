@@ -18,4 +18,9 @@ brew cask install google-chrome
 brew cask install teamviewer
 brew cask install filezilla
 brew cask install slack
+
+#composer
 brew cask install java
+brew install homebrew/php/composer 
+brew install homebrew/php/phpunit
+brew install homebrew/php/php56-mcrypt
