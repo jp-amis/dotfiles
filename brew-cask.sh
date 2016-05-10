@@ -18,3 +18,4 @@ brew cask install google-chrome
 brew cask install teamviewer
 brew cask install filezilla
 brew cask install slack
+brew cask install java
