@@ -20,7 +20,8 @@ brew cask install filezilla
 brew cask install slack
 
 #composer
+curl -sS https://getcomposer.org/installer | php
+sudo mv composer.phar /usr/local/bin/
+
+
 brew cask install java
-brew install homebrew/php/composer 
-brew install homebrew/php/phpunit
-brew install homebrew/php/php56-mcrypt
