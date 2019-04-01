@@ -51,9 +51,6 @@ plugins=(git colorize z)
 
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
-# PHP MAMP 5.6.10
-export PATH=/Applications/MAMP/bin/php/php5.6.10/bin:$PATH
-
 # NPM Global
 export PATH=~/.npm-global/bin:$PATH
 
