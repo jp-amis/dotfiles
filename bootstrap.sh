@@ -29,6 +29,7 @@ brew tap caskroom/versions
 brew cask install the-unarchiver
 brew cask install java
 brew cask install google-chrome
+brew cask install transmission
 
 brew tap caskroom/fonts
 brew cask install font-fira-code
