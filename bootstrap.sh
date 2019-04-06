@@ -33,8 +33,12 @@ brew cask install transmission
 
 brew tap caskroom/fonts
 brew cask install font-fira-code
+brew install cmake
+brew cask install macvim
 
 brew install redis
+
+brew install ctags
 
 brew tap mongodb/brew
 brew install mongodb-community@4.0
@@ -46,5 +50,8 @@ curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | 
 chsh -s /usr/local/bin/zsh
 
 yes | cp -R dots/ ~/
+
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 source .osx

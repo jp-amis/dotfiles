@@ -52,8 +52,16 @@ plugins=(git colorize z)
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
 # NPM Global
-export PATH=~/.npm-global/bin:$PATH
+#export PATH=~/.npm-global/bin:$PATH
 
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+
+
+export FZF_DEFAULT_COMMAND='fd --type f'
+alias ctags="`brew --prefix`/bin/ctags"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -84,3 +92,6 @@ source $ZSH/oh-my-zsh.sh
 
 # all of our zsh files
 source $HOME/.zsh/aliases.zsh
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+zstyle ':urlglobber' url-other-schema
