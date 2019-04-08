@@ -26,6 +26,7 @@ brew install zsh-completions
 
 brew install caskroom/cask/brew-cask
 brew tap caskroom/versions
+brew cask install iterm2
 brew cask install the-unarchiver
 brew cask install java
 brew cask install google-chrome
