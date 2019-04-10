@@ -17,16 +17,7 @@ Plugin 'editorconfig/editorconfig-vim'
 Plugin 'w0rp/ale'
 Plugin 'posva/vim-vue'
 Plugin 'morhetz/gruvbox'
-Plugin 'LucHermitte/lh-vim-lib'
-Plugin 'LucHermitte/lh-style'
-Plugin 'LucHermitte/lh-tags'
-Plugin 'LucHermitte/lh-dev'
-Plugin 'LucHermitte/lh-brackets'
-Plugin 'LucHermitte/searchInRuntime'
-Plugin 'LucHermitte/mu-template'
-Plugin 'tomtom/stakeholders_vim'
-Plugin 'LucHermitte/alternate-lite'
-Plugin 'LucHermitte/lh-cpp'
+Plugin 'tpope/vim-fugitive'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
