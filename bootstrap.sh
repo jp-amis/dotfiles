@@ -13,6 +13,7 @@ brew install moreutils
 brew install findutils
 brew install gnu-sed --default-names
 
+brew install python
 brew install vim --override-system-vi
 
 brew install homebrew/dupes/grep
@@ -22,7 +23,13 @@ brew install tree
 brew cleanup
 brew install zsh 
 brew install zsh-completions
+brew install bat
+brew install mono
+brew install go
+brew install fzf
+brew install fd
 
+curl https://sh.rustup.rs -sSf | sh
 
 brew install caskroom/cask/brew-cask
 brew tap caskroom/versions

@@ -49,7 +49,7 @@ plugins=(git colorize z)
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.cargo/bin"
 
 # NPM Global
 #export PATH=~/.npm-global/bin:$PATH
@@ -95,3 +95,21 @@ source $HOME/.zsh/aliases.zsh
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 zstyle ':urlglobber' url-other-schema
+
+# Add environment variable COCOS_CONSOLE_ROOT for cocos2d-x
+export COCOS_CONSOLE_ROOT="/Volumes/Storage/Projects/tmp/cocos2d-x/tools/cocos2d-console/bin"
+export PATH=$COCOS_CONSOLE_ROOT:$PATH
+
+# Add environment variable COCOS_X_ROOT for cocos2d-x
+export COCOS_X_ROOT="/Volumes/Storage/Projects/tmp"
+export PATH=$COCOS_X_ROOT:$PATH
+
+# Add environment variable COCOS_TEMPLATES_ROOT for cocos2d-x
+export COCOS_TEMPLATES_ROOT="/Volumes/Storage/Projects/tmp/cocos2d-x/templates"
+export PATH=$COCOS_TEMPLATES_ROOT:$PATH
+
+export FZF_DEFAULT_COMMAND='fd --type f'
+export GIT_EDITOR="vim -f"
+
+
+git config --global core.editor "mvim -f"

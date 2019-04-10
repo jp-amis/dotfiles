@@ -8,3 +8,5 @@ alias vim="mvim -v"
 alias vi="mvim -v"
 
 alias cat="bat"
+
+alias server-mongodb="mongod --config /usr/local/etc/mongod.conf"
