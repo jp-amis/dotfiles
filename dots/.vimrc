@@ -56,7 +56,7 @@ call plug#end()
 let g:NERDSpaceDelims = 1
 
 " Use compact syntax for prettified multi-line comments
-let g:NERDCompactSexyComs = 1
+let g:NERDCompactSexyComs = 0
 
 
 
