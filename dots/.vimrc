@@ -45,10 +45,11 @@ if empty(glob('~/.vim/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 call plug#begin('~/.vim/bundle')
-Plug 'junegunn/fzf.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'scrooloose/nerdcommenter'
 Plug 'pangloss/vim-javascript'
+Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf.vim'
 call plug#end()
 
 " Add spaces after comment delimiters by default
@@ -138,6 +139,20 @@ if has("gui_macvim")
   " Command-0 goes to the last tab
   noremap <D-0> :tablast<CR>
 
+  imap <D-1> <esc>:tabn 1<CR>
+  imap <D-2> <esc>:tabn 2<CR>
+  imap <D-3> <esc>:tabn 3<CR>
+  imap <D-4> <esc>:tabn 4<CR>
+  imap <D-5> <esc>:tabn 5<CR>
+  imap <D-6> <esc>:tabn 6<CR>
+  imap <D-7> <esc>:tabn 7<CR>
+  imap <D-8> <esc>:tabn 8<CR>
+  imap <D-9> <esc>:tabn 9<CR>
+  " Command-0 goes to the last tab
+  imap <D-0> <esc>:tablast<CR>
+
+
+
   "  set macligatures
   set guifont=Fira\ Code:h14
 
@@ -146,7 +161,7 @@ if has("gui_macvim")
 endif
 
 let b:ale_linters = ['eslint']
-let g:ale_open_list = 1
+let g:ale_open_list = 0
 let g:ale_sign_error = '>>'
 let g:ale_sign_warning = '--'
 
