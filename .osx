@@ -1,0 +1,67 @@
+#!/usr/bin/env bash
+
+sudo -v
+
+osascript -e 'tell application "System Preferences" to quit'
+
+defaults write NSGlobalDomain NSWindowResizeTime -float 0.001
+
+defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
+defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
+
+defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
+
+defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
+
+defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false
+
+defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
+
+defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -bool false
+
+defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
+
+defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+defaults write NSGlobalDomain KeyRepeat -int 2
+defaults write NSGlobalDomain InitialKeyRepeat -int 15
+
+defaults write com.apple.screensaver askForPassword -int 1
+defaults write com.apple.screensaver askForPasswordDelay -int 0
+
+defaults write com.apple.screencapture location -string "${HOME}/Desktop"
+
+defaults write com.apple.screencapture type -string "png"
+defaults write com.apple.screencapture disable-shadow -bool true
+
+defaults write com.apple.finder DisableAllAnimations -bool true
+
+defaults write com.apple.finder AppleShowAllFiles -bool true
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+defaults write com.apple.finder ShowPathbar -bool true
+defaults write com.apple.finder ShowStatusBar -bool true
+
+defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
+
+defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
+
+chflags nohidden ~/Library
+sudo chflags nohidden /Volumes
+
+defaults write com.apple.dock tilesize -int 36
+
+defaults write com.apple.dock mineffect -string "scale"
+
+defaults write com.apple.dock minimize-to-application -bool true
+
+defaults write com.apple.dock persistent-apps -array
+defaults write com.apple.dock static-only -bool true
+defaults write com.apple.dock launchanim -bool false
+defaults write com.apple.dock expose-animation-duration -float 0.1
+defaults write com.apple.dock autohide-delay -float 0
+defaults write com.apple.dock autohide-time-modifier -float 0
+defaults write com.apple.dock autohide -bool true
+
+defaults write com.apple.finder CreateDesktop -bool false
+
+defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
+
