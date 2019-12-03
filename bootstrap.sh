@@ -29,6 +29,7 @@ brew tap caskroom/fonts
 brew cask install font-fira-code
 
 curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
+echo "$(which zsh)" >> /etc/shells
 chsh -s /usr/local/bin/zsh
 
 yes | cp -R dots/ ~/
